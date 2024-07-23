@@ -30,6 +30,9 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = '80'
 
+vim.opt.encoding = 'utf-8'
+vim.opt.fileencoding = 'utf-8'
+
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
