@@ -51,6 +51,7 @@ return {
           end, { 'i', 's' }),
         },
         sources = {
+          { name = 'orgmode'},
           {
             name = 'lazydev',
             group_index = 0,
