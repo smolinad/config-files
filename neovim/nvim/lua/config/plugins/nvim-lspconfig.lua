@@ -42,6 +42,7 @@ return {
 
     lspconfig.clangd.setup({
       capabilities = capabilities,
+      cmd = {"clangd", "--offset-encoding=utf-16",}
     })
 
     lspconfig.pylsp.setup({

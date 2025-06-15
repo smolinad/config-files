@@ -12,8 +12,6 @@ return {
     config = function()
       local cmp = require 'cmp'
       local luasnip = require 'luasnip'
-      luasnip.config.setup {}
-      -- Your exact cmp setup as provided
       cmp.setup {
         snippet = {
           expand = function(args)
