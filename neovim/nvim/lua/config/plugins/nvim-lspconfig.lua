@@ -22,6 +22,16 @@ return {
       vim.keymap.set('n', keys, func, { buffer = buf, desc = 'LSP: ' .. desc })
     end
 
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        pattern = "*",
+        callback = function(args)
+            vim.lsp.buf.format({
+                async = false,
+                bufnr = args.buf
+            })
+        end
+    })
+
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
       callback = function(event)
