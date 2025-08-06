@@ -12,8 +12,8 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 --Buffer 
 vim.keymap.set('x', '<leader>p', "\"_dP")
 vim.keymap.set('n', '<leader>y', "\"+y")
-vim.keymap.set('n', '<leader>Y', "\"+Y")
-vim.keymap.set('v', '<leader>y', "\"+y")
+--vim.keymap.set('n', '<leader>Y', "\"+Y")
+--vim.keymap.set('v', '<leader>y', "\"+y")
 
 --Folder
 vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux new tmux-sessionizer<CR>')
